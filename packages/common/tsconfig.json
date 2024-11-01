@@ -1,0 +1,20 @@
+{
+  "extends": "../vite-project/tsconfig.app.json",
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "noEmit": false,
+    "allowImportingTsExtensions": false,
+    "declaration": true, // Add this to generate .d.ts files
+    "declarationMap": true, // Optional: generate source map for .d.ts files
+    "emitDeclarationOnly": false // Optional: only emit declaration files,
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
